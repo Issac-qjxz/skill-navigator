@@ -1,6 +1,10 @@
 # skill-navigator
 
-对 65+ 个已安装 AI coding assistant skill 的智能推荐入口。输入自然语言描述的任务需求，自动匹配最合适的 skill 并给出调用命令和简介。
+对 65+ 个已安装 AI coding assistant skill 的智能推荐入口。
+输入自然语言描述的任务需求，自动匹配最合适的 skill 并给出调用命令和简介。
+
+注意：这个65+是我自己用的skills建立的索引，本skill自带重建索引功能，
+    启用skill-navigator后对你自己的skills进行重建索引即可正常使用，教程见下部分。
 
 ## 平台支持
 
