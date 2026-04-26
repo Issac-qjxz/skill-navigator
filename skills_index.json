@@ -1,0 +1,686 @@
+{
+  "version": 1,
+  "updated_at": "",
+  "skills": [
+    {
+      "name": "algorithm-design",
+      "category": "",
+      "description": "Design algorithms with LaTeX pseudocode and UML diagrams. Generate algorithmic environments, Mermaid class/sequence diagrams, and ensure consistency between pseudocode and implementation. Use when formalizing methods for a paper.",
+      "command": "/algorithm-design",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "atomic-decomposition",
+      "category": "",
+      "description": "Decompose research ideas into atomic, self-contained concepts with bidirectional math-code mapping. For each concept, extract the math formula from papers and find code implementations. Use for complex system papers requiring formal grounding.",
+      "command": "/atomic-decomposition",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "backward-traceability",
+      "category": "",
+      "description": "Make every number in the final PDF traceable to the exact code line that produced it. Uses \\hypertarget/\\hyperlink LaTeX commands and \\num{formula} evaluated at compile time. Use for reproducibility and data integrity verification.",
+      "command": "/backward-traceability",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "book2skill",
+      "category": "",
+      "description": "Distill a book into a coherent set of executable skills. Use when the user asks to \"拆书\" / \"蒸馏一本书\" / \"把 XX 书做成 skill\" / \"turn a book into skills\" — i.e. wants a book's frameworks, principles, and methodologies extracted into atomic, reusable Claude skills that an agent can invoke in real-world situations. NOT for simple summarization, book reviews, or role-playing as the author (that is nuwa-skill's job).",
+      "command": "/book2skill",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "brainstorming",
+      "category": "",
+      "description": "在任何创造性工作之前必须使用此技能——创建功能、构建组件、添加功能或修改行为。",
+      "command": "/brainstorming",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "chinese-code-review",
+      "category": "",
+      "description": "中文代码审查规范——在保持专业严谨的同时，用符合国内团队文化的方式给出有效反馈",
+      "command": "/chinese-code-review",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "chinese-commit-conventions",
+      "category": "",
+      "description": "中文 Git 提交规范 — 适配国内团队的 commit message 规范和 changelog 自动化",
+      "command": "/chinese-commit-conventions",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "chinese-documentation",
+      "category": "",
+      "description": "中文技术文档写作规范——排版、术语、结构一步到位，告别机翻味",
+      "command": "/chinese-documentation",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "chinese-git-workflow",
+      "category": "",
+      "description": "适配国内 Git 平台和团队习惯的工作流规范——Gitee、Coding、极狐 GitLab、CNB 全覆盖",
+      "command": "/chinese-git-workflow",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "citation-management",
+      "category": "",
+      "description": "Manage BibTeX citations for LaTeX papers. Harvest missing citations from a draft using Semantic Scholar, validate cite keys against .bib files, deduplicate entries, and format bibliography. Use when working with references, BibTeX, or citations.",
+      "command": "/citation-management",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "code-debugging",
+      "category": "",
+      "description": "Debug experiment code with structured error analysis. Categorize errors, apply targeted fixes with retry logic, and use reflection to prevent recurring issues. Use when experiment code fails or produces incorrect results.",
+      "command": "/code-debugging",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "darwin-skill",
+      "category": "",
+      "description": "Darwin Skill (达尔文.skill): autonomous skill optimizer inspired by Karpathy's autoresearch. Evaluates SKILL.md files using an 8-dimension rubric (structure + effectiveness), runs hill-climbing with git version control, validates improvements through test prompts, and generates visual result cards. Use when user mentions \\\"优化skill\\\", \\\"skill评分\\\", \\\"自动优化\\\", \\\"auto optimize\\\", \\\"skill质量检查\\\", \\\"达尔文\\\", \\\"darwin\\\", \\\"帮我改改skill\\\", \\\"skill怎么样\\\", \\\"提升skill质量\\\", \\\"skill review\\\", \\\"skill打分\\\".",
+      "command": "/darwin-skill",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "data-analysis",
+      "category": "",
+      "description": "Generate statistical analysis code with 4-round review. Select appropriate statistical tests, interpret results, and produce analysis reports with p-values, effect sizes, and confidence intervals. Use when analyzing experimental data for a paper.",
+      "command": "/data-analysis",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "deep-research",
+      "category": "",
+      "description": "Conduct systematic academic literature reviews in 6 phases, producing structured notes, a curated paper database, and a synthesized final report. Output is organized by phase for clarity.",
+      "command": "/deep-research",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "dispatching-parallel-agents",
+      "category": "",
+      "description": "当面对 2 个以上可以独立进行、无共享状态或顺序依赖的任务时使用",
+      "command": "/dispatching-parallel-agents",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "docx",
+      "category": "",
+      "description": "Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files). Triggers include: any mention of 'Word doc', 'word document', '.docx', or requests to produce professional documents with formatting like tables of contents, headings, page numbers, or letterheads. Also use when extracting or reorganizing content from .docx files, inserting or replacing images in documents, performing find-and-replace in Word files, working with tracked changes or comments, or converting content into a polished Word document. If the user asks for a 'report', 'memo', 'letter', 'template', or similar deliverable as a Word or .docx file, use this skill. Do NOT use for PDFs, spreadsheets, Google Docs, or general coding tasks unrelated to document generation.",
+      "command": "/docx",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "excalidraw-skill",
+      "category": "",
+      "description": "Programmatic canvas toolkit for creating, editing, and refining Excalidraw diagrams via MCP tools with real-time canvas sync. Use when an agent needs to (1) draw or lay out diagrams on a live canvas, (2) iteratively refine diagrams using describe_scene and get_canvas_screenshot to see its own work, (3) export/import .excalidraw files or PNG/SVG images, (4) save/restore canvas snapshots, (5) convert Mermaid to Excalidraw, or (6) perform element-level CRUD, alignment, distribution, grouping, duplication, and locking. Requires a running canvas server (EXPRESS_SERVER_URL, default http://localhost:3000).",
+      "command": "/excalidraw-skill",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "executing-plans",
+      "category": "",
+      "description": "当你有一份书面实现计划需要在单独的会话中执行，并设有审查检查点时使用",
+      "command": "/executing-plans",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "experiment-code",
+      "category": "",
+      "description": "Write ML experiment code with iterative improvement. Generate training/evaluation pipelines, debug errors, and optimize results through code reflection. Use when implementing experiments for a research paper.",
+      "command": "/experiment-code",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "experiment-design",
+      "category": "",
+      "description": "Design experiment plans with progressive stages — initial implementation, baseline tuning, creative research, and ablation studies. Plan baselines, datasets, hyperparameter sweeps, and evaluation metrics. Use when planning experiments for a research paper.",
+      "command": "/experiment-design",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "figure-generation",
+      "category": "",
+      "description": "Generate publication-quality scientific figures using matplotlib/seaborn with a three-phase pipeline (query expansion, code generation with execution, VLM visual feedback). Handles bar charts, line plots, heatmaps, training curves, ablation plots, and more. Use when the user needs figures, plots, or visualizations for a paper.",
+      "command": "/figure-generation",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "finishing-a-development-branch",
+      "category": "",
+      "description": "当实现完成、所有测试通过、需要决定如何集成工作时使用——通过提供合并、PR 或清理等结构化选项来引导开发工作的收尾",
+      "command": "/finishing-a-development-branch",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "github-research",
+      "category": "",
+      "description": "Explore and analyze GitHub repositories related to a research topic. Reads deep-research output, discovers repos from multiple sources, deeply analyzes code, and produces integration blueprints.",
+      "command": "/github-research",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "huashu-nuwa",
+      "category": "",
+      "description": "|",
+      "command": "/huashu-nuwa",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "humanizer-zh",
+      "category": "",
+      "description": "|",
+      "command": "/humanizer-zh",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "idea-generation",
+      "category": "",
+      "description": "Generate novel research ideas with iterative refinement and novelty checking against literature. Score ideas on Interestingness, Feasibility, and Novelty. Use when brainstorming research directions or validating idea novelty.",
+      "command": "/idea-generation",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "latex-formatting",
+      "category": "",
+      "description": "Handle LaTeX formatting, templates, and styling for academic papers. Set up conference templates (ICML, ICLR, NeurIPS, AAAI, ACL), fix formatting issues, manage packages, and ensure venue-specific compliance. Use when the user needs to set up a paper template, fix LaTeX formatting, or prepare for submission.",
+      "command": "/latex-formatting",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "literature-review",
+      "category": "",
+      "description": "Conduct comprehensive literature reviews using multi-perspective dialogue simulation. Generate diverse expert personas, conduct grounded Q&A conversations, and synthesize findings into structured knowledge. Use when starting a new research project or writing a survey section.",
+      "command": "/literature-review",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "literature-search",
+      "category": "",
+      "description": "Search academic literature using Semantic Scholar, arXiv, and OpenAlex APIs. Returns structured JSONL with title, authors, year, venue, abstract, citations, and BibTeX. Use when the user needs to find papers, check related work, or build a bibliography.",
+      "command": "/literature-search",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "math-reasoning",
+      "category": "",
+      "description": "Formal mathematical reasoning for research papers — derive equations, write proofs, formalize problem settings, select statistical tests, and generate LaTeX math notation. Use when the user needs mathematical derivations, theorem proofs, notation tables, or statistical analysis formalization.",
+      "command": "/math-reasoning",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "mcp-builder",
+      "category": "",
+      "description": "MCP 服务器构建方法论 — 系统化构建生产级 MCP 工具，让 AI 助手连接外部能力",
+      "command": "/mcp-builder",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "novelty-assessment",
+      "category": "",
+      "description": "Assess research idea novelty through systematic literature search. Multi-round search-evaluate loops with harsh critic persona. Binary novel/not-novel decision with justification. Use before committing to a research direction.",
+      "command": "/novelty-assessment",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "paper-assembly",
+      "category": "",
+      "description": "Orchestrate the full paper pipeline end-to-end. Manage state propagation between phases (literature → plan → code → experiments → figures → tables → writing → review), support checkpointing and resumption. Use for assembling a complete paper from components.",
+      "command": "/paper-assembly",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "paper-compilation",
+      "category": "",
+      "description": "Compile LaTeX papers to PDF with automatic error detection, chktex style checking, and citation/reference validation. Runs the full pdflatex + bibtex pipeline. Use when the user wants to compile a paper, fix compilation errors, or debug LaTeX.",
+      "command": "/paper-compilation",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "paper-revision",
+      "category": "",
+      "description": "Revise papers based on reviewer feedback. Map reviewer concerns to specific sections, apply targeted edits, run additional experiments if needed, and verify improvements. Use after receiving peer review with revision requests.",
+      "command": "/paper-revision",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "paper-to-code",
+      "category": "",
+      "description": "Convert an ML research paper into a complete, runnable code repository. 3-stage pipeline from Paper2Code — Planning (UML + dependency graph) → Analysis (per-file logic) → Coding (dependency-ordered generation). Use for reproducing paper methods.",
+      "command": "/paper-to-code",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "paper-writing-section",
+      "category": "",
+      "description": "Write a specific section of an academic paper (Abstract, Introduction, Background, Related Work, Methods, Experiments, Results, Discussion/Conclusion) with section-specific guidance and two-pass refinement. Use when the user wants to write, draft, or improve a paper section.",
+      "command": "/paper-writing-section",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "pdf",
+      "category": "",
+      "description": "Use this skill whenever the user wants to do anything with PDF files. This includes reading or extracting text/tables from PDFs, combining or merging multiple PDFs into one, splitting PDFs apart, rotating pages, adding watermarks, creating new PDFs, filling PDF forms, encrypting/decrypting PDFs, extracting images, and OCR on scanned PDFs to make them searchable. If the user mentions a .pdf file or asks to produce one, use this skill.",
+      "command": "/pdf",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "planning-with-files-zh",
+      "category": "",
+      "description": "基于 Manus 风格的文件规划系统，用于组织和跟踪复杂任务的进度。",
+      "command": "/planning-with-files-zh",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "pptx",
+      "category": "",
+      "description": "Use this skill any time a .pptx file is involved in any way — as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from any .pptx file (even if the extracted content will be used elsewhere, like in an email or summary); editing, modifying, or updating existing presentations; combining or splitting slide files; working with templates, layouts, speaker notes, or comments. Trigger whenever the user mentions \\\"deck,\\\" \\\"slides,\\\" \\\"presentation,\\\" or references a .pptx filename, regardless of what they plan to do with the content afterward. If a .pptx file needs to be opened, created, or touched, use this skill.",
+      "command": "/pptx",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "ralph-loop",
+      "category": "",
+      "description": "Continuous self-referential AI loops for iterative development (Ralph Wiggum technique). Run Claude on the same task repeatedly until completion. Use for: iterative refactoring, bug fixing, test-driven development, mechanical migrations.",
+      "command": "/ralph-loop",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "rebuttal-writing",
+      "category": "",
+      "description": "Write point-by-point rebuttals to reviewer comments. Extract concerns from reviews, generate evidence-based responses, and format as a structured rebuttal document. Use after receiving peer review feedback.",
+      "command": "/rebuttal-writing",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "receiving-code-review",
+      "category": "",
+      "description": "收到代码审查反馈后、实施建议之前使用，尤其当反馈不明确或技术上有疑问时——需要技术严谨性和验证，而非敷衍附和或盲目执行",
+      "command": "/receiving-code-review",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "related-work-writing",
+      "category": "",
+      "description": "Write Related Work sections that compare and contrast prior work with your approach. Organize by theme, cite broadly, and explain how your work differs. Use when writing or improving the Related Work section of a paper.",
+      "command": "/related-work-writing",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "requesting-code-review",
+      "category": "",
+      "description": "完成任务、实现重要功能或合并前使用，用于验证工作成果是否符合要求",
+      "command": "/requesting-code-review",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "research-planning",
+      "category": "",
+      "description": "Design research plans and paper architectures. Given a research topic or idea, generate structured plans with methodology outlines, paper structure, dependency-ordered task lists, UML diagrams, and experiment designs. Use when starting a new research project or paper.",
+      "command": "/research-planning",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "self-review",
+      "category": "",
+      "description": "Automatically review an academic paper using the NeurIPS review form with three reviewer personas, ensemble scoring, and reflection refinement. Extracts text from PDF, runs structured review, and outputs actionable feedback. Use when the user wants to review a paper before submission or get feedback on a draft.",
+      "command": "/self-review",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "skill-creator",
+      "category": "",
+      "description": "Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill performance with variance analysis, or optimize a skill's description for better triggering accuracy.",
+      "command": "/skill-creator",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "skill-navigator",
+      "category": "",
+      "description": "对 65+ 个已安装 skill 的智能推荐入口。",
+      "command": "/skill-navigator",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "slide-generation",
+      "category": "",
+      "description": "Convert a completed paper into presentation slides (Beamer LaTeX) or poster. Extract key figures, tables, equations, and create a narrative flow for oral presentation. Identified gap in existing tools — designed from best practices.",
+      "command": "/slide-generation",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "subagent-driven-development",
+      "category": "",
+      "description": "当在当前会话中执行包含独立任务的实现计划时使用",
+      "command": "/subagent-driven-development",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "survey-generation",
+      "category": "",
+      "description": "Generate complete academic survey papers using multi-LLM parallel outline generation, RAG-based subsection writing, citation validation, and local coherence enhancement. Based on AutoSurvey pipeline. Use for writing comprehensive literature surveys.",
+      "command": "/survey-generation",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "symbolic-equation",
+      "category": "",
+      "description": "Discover scientific equations from data using LLM-guided evolutionary search (LLM-SR). Multi-island algorithm with softmax-based cluster sampling, island reset, and LLM-proposed equation mutations. Use for symbolic regression and equation discovery.",
+      "command": "/symbolic-equation",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "systematic-debugging",
+      "category": "",
+      "description": "遇到任何 bug、测试失败或异常行为时使用，在提出修复方案之前执行",
+      "command": "/systematic-debugging",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "table-generation",
+      "category": "",
+      "description": "Generate publication-quality LaTeX tables from experimental results. Convert JSON/CSV data to booktabs-styled tables with bold best results, multi-row layouts, and proper captions. Use when creating result tables, comparison tables, or ablation tables for papers.",
+      "command": "/table-generation",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "test-driven-development",
+      "category": "",
+      "description": "在实现任何功能或修复 bug 时使用，在编写实现代码之前",
+      "command": "/test-driven-development",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "using-git-worktrees",
+      "category": "",
+      "description": "当需要开始与当前工作区隔离的功能开发或执行实现计划之前使用——创建具有智能目录选择和安全验证的隔离 git 工作树",
+      "command": "/using-git-worktrees",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "using-superpowers",
+      "category": "",
+      "description": "在开始任何对话时使用——确立如何查找和使用技能，要求在任何响应（包括澄清性问题）之前调用 Skill 工具",
+      "command": "/using-superpowers",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "vercel-react-view-transitions",
+      "category": "",
+      "description": "Guide for implementing smooth, native-feeling animations using React's View Transition API (`<ViewTransition>` component, `addTransitionType`, and CSS view transition pseudo-elements). Use this skill whenever the user wants to add page transitions, animate route changes, create shared element animations, animate enter/exit of components, animate list reorder, implement directional (forward/back) navigation animations, or integrate view transitions in Next.js. Also use when the user mentions view transitions, `startViewTransition`, `ViewTransition`, transition types, or asks about animating between UI states in React without third-party animation libraries.",
+      "command": "/vercel-react-view-transitions",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "verification-before-completion",
+      "category": "",
+      "description": "在宣称工作完成、已修复或测试通过之前使用，在提交或创建 PR 之前——必须运行验证命令并确认输出后才能声称成功；始终用证据支撑断言",
+      "command": "/verification-before-completion",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "workflow-runner",
+      "category": "",
+      "description": "在 Claude Code / OpenClaw / Cursor 中直接运行 agency-orchestrator YAML 工作流——无需 API key，使用当前会话的 LLM 作为执行引擎。",
+      "command": "/workflow-runner",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "writing-plans",
+      "category": "",
+      "description": "当你有规格说明或需求用于多步骤任务时使用，在动手写代码之前",
+      "command": "/writing-plans",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "writing-skills",
+      "category": "",
+      "description": "当创建新技能、编辑现有技能或在部署前验证技能是否有效时使用",
+      "command": "/writing-skills",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "xlsx",
+      "category": "",
+      "description": "Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit, or fix an existing .xlsx, .xlsm, .csv, or .tsv file (e.g., adding columns, computing formulas, formatting, charting, cleaning messy data); create a new spreadsheet from scratch or from other data sources; or convert between tabular file formats. Trigger especially when the user references a spreadsheet file by name or path — even casually (like \\\"the xlsx in my downloads\\\") — and wants something done to it or produced from it. Also trigger for cleaning or restructuring messy tabular data files (malformed rows, misplaced headers, junk data) into proper spreadsheets. The deliverable must be a spreadsheet file. Do NOT trigger when the primary deliverable is a Word document, HTML report, standalone Python script, database pipeline, or Google Sheets API integration, even if tabular data is involved.",
+      "command": "/xlsx",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "zhangxuefeng-skill",
+      "category": "",
+      "description": "|",
+      "command": "/zhangxuefeng-skill",
+      "parent": null,
+      "type": "standalone",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "deepaper",
+      "category": "命令别名",
+      "description": "",
+      "command": "/deepaper",
+      "parent": null,
+      "type": "command",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "plan-zh",
+      "category": "命令别名",
+      "description": "启动 Manus 风格的文件规划。",
+      "command": "/plan-zh",
+      "parent": null,
+      "type": "command",
+      "github_url": "",
+      "sub_commands": []
+    },
+    {
+      "name": "research",
+      "category": "命令别名",
+      "description": "Conduct a deep academic literature review on a topic",
+      "command": "/research",
+      "parent": null,
+      "type": "command",
+      "github_url": "",
+      "sub_commands": []
+    }
+  ]
+}

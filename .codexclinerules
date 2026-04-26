@@ -1,0 +1,58 @@
+# skill-navigator: Codex CLI 适配规则
+
+本仓库包含一个 skill 推荐系统。所有已安装 skill 的信息记录在 `skills_index.json` 中。
+当用户询问 skill 推荐或描述任务需求时，遵循以下流程。
+
+## 技能推荐
+
+当用户说"推荐一个 skill"或描述想做的任务时：
+
+1. 读取 `skills_index.json`，获取完整 skill 列表
+2. 如果文件不存在或内容为空，提示用户运行重建脚本：
+
+```bash
+# 本地重建（零网络，推荐）
+python3 scripts/scan-local.py
+
+# 或 GitHub 重建（更完整）
+python3 scripts/scan-github.py
+```
+
+3. 根据用户的需求，从列表中选择最相关的 1-3 个 skill
+4. 按以下格式输出：
+
+```
+╭─ 推荐结果 ──────────────────────────────────╮
+│                                             │
+│ 1. <skill-name>                             │
+│    命令: /<skill-name>                      │
+│    用途: <description>                       │
+│    分类: <category>                          │
+│                                             │
+╰─────────────────────────────────────────────╯
+```
+
+## skills_index.json 结构说明
+
+```json
+{
+  "version": 1,
+  "skills": [
+    {
+      "name": "skill 名称",
+      "category": "分类",
+      "description": "用途说明",
+      "command": "/skill-name",
+      "parent": "所属父包（如有）",
+      "type": "child-skill / standalone / parent-skill / command",
+      "github_url": "GitHub 仓库链接"
+    }
+  ]
+}
+```
+
+## 平台说明
+
+- 这是 Codex CLI 的适配入口。Claude Code / OpenClaw 用户使用 SKILL.md。
+- 重建脚本（`scripts/` 下）在所有平台间共享。
+- 依赖：Python >= 3.6（stdlib 即可），gh CLI（可选）。
